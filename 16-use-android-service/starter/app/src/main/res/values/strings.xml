@@ -1,0 +1,7 @@
+<resources>
+  <string name="app_name">Memories</string>
+  <string name="no_data">No data! Upload some images! :]</string>
+  <string name="upload_image_button_text">Upload new image</string>
+  <string name="synchronize_images_button_text">Synchronize images</string>
+  <string name="download_image_option">Download image</string>
+</resources>

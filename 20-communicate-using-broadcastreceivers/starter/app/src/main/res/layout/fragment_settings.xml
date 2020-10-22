@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="@color/default_background"
+  android:orientation="vertical">
+
+  <Button
+    android:id="@+id/uploadImage"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/default_margins"
+    android:layout_marginTop="40dp"
+    android:layout_marginEnd="@dimen/default_margins"
+    android:background="@color/white"
+    android:text="@string/upload_image_button_text"
+    android:textAllCaps="false"
+    android:textSize="18sp" />
+
+  <Button
+    android:id="@+id/syncImages"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/default_margins"
+    android:layout_marginTop="@dimen/half_margins"
+    android:layout_marginEnd="@dimen/default_margins"
+    android:background="@color/white"
+    android:text="@string/synchronize_images_button_text"
+    android:textAllCaps="false"
+    android:textSize="18sp" />
+</LinearLayout>

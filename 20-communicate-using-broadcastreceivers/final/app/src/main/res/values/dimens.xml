@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <dimen name="default_margins">16dp</dimen>
+  <dimen name="half_margins">8dp</dimen>
+  <dimen name="bottom_bar_height">56dp</dimen>
+  <dimen name="large_margin">32dp</dimen>
+</resources>

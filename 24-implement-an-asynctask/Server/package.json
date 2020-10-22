@@ -1,0 +1,14 @@
+{
+  "name": "simple-file-server",
+  "version": "0.0.1",
+  "description": "Simple File Server",
+  "engines": {
+    "node": "9.11.1"
+  },
+  "author": "fernandospr",
+  "license": "MIT",
+  "dependencies": {
+    "express": "4.16.3",
+    "express-fileupload": "0.4.0"
+  }
+}
