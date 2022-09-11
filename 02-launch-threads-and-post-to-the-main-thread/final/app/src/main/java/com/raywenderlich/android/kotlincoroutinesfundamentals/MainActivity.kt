@@ -54,7 +54,7 @@ class MainActivity : AppCompatActivity() {
     setContentView(R.layout.activity_main)
 
     Thread(Runnable {
-      val imageUrl = URL("https://wallpaperplay.com/walls/full/1/c/7/38027.jpg")
+      val imageUrl = URL("https://cdn.pixabay.com/photo/2018/01/14/23/12/nature-3082832__480.jpg")
       val connection = imageUrl.openConnection() as HttpURLConnection
       connection.doInput = true
       connection.connect()
