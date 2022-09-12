@@ -36,6 +36,7 @@ package com.raywenderlich.android.memories.ui.images
 
 import android.net.ConnectivityManager
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -133,6 +134,7 @@ class ImagesFragment : Fragment(), ImageOptionsDialogFragment.ImageOptionsListen
         if (result is Success) {
           onImageUrlsReceived(result.data)
         } else {
+          Log.d("ImagesFragment", result.toString())
           onGetImagesFailed()
         }
 

@@ -45,22 +45,23 @@ import retrofit2.Retrofit
  * Builds Retrofit and its components.
  */
 
-private const val BASE_URL = "http://192.168.0.19:3000"
+private const val BASE_URL = "http://192.168.0.18:3000"
 
 fun buildApiService(): RemoteApiService = buildRetrofit().create(RemoteApiService::class.java)
 
 fun buildRetrofit(): Retrofit {
-  val contentType = "application/json".toMediaType()
+    val contentType = "application/json".toMediaType()
 
-  return Retrofit.Builder()
-      .client(buildClient())
-      .baseUrl(BASE_URL)
-      .addConverterFactory(Json.nonstrict.asConverterFactory(contentType))
-      .build()
+    return Retrofit.Builder()
+        .client(buildClient())
+        .baseUrl(BASE_URL)
+        .addConverterFactory(Json.asConverterFactory(contentType))
+        .build()
 }
 
 fun buildClient(): OkHttpClient = OkHttpClient.Builder()
     .addInterceptor(HttpLoggingInterceptor().apply {
-      level = HttpLoggingInterceptor.Level.BODY
+        level = HttpLoggingInterceptor.Level.BODY
     })
     .build()
+
