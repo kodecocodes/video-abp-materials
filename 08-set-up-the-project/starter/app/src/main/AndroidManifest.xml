@@ -20,7 +20,7 @@
     tools:ignore="GoogleAppIndexingWarning">
 
     <!-- Main Activity -->
-    <activity android:name=".ui.main.MainActivity">
+    <activity android:name=".ui.main.MainActivity" android:exported="true">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
         <category android:name="android.intent.category.LAUNCHER" />
