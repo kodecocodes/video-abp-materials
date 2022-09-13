@@ -80,7 +80,7 @@ class MainActivity : AppCompatActivity() {
             ComponentName(this, DownloadImageJobService::class.java))
             .setRequiredNetworkType(JobInfo.NETWORK_TYPE_UNMETERED)
             .setExtras(PersistableBundle().apply {
-              putString("image_path", "https://wallpaperplay.com/walls/full/1/c/7/38027.jpg")
+              putString("image_path", "https://cdn.pixabay.com/photo/2017/11/30/11/57/barn-owl-2988291_960_720.jpg")
             })
             .setOverrideDeadline(1500)
             .build()
