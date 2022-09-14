@@ -67,7 +67,7 @@ class MainActivity : AppCompatActivity() {
         Intent(this, MainActivity::class.java).apply {
           flags = Intent.FLAG_ACTIVITY_SINGLE_TOP
         },
-        PendingIntent.FLAG_UPDATE_CURRENT
+        PendingIntent.FLAG_UPDATE_CURRENT or PendingIntent.FLAG_IMMUTABLE
     )
 
     alarmManager.setExact(
@@ -80,7 +80,7 @@ class MainActivity : AppCompatActivity() {
   override fun onNewIntent(intent: Intent?) {
     super.onNewIntent(intent)
     Thread(Runnable {
-      val imageUrl = URL("https://wallpaperplay.com/walls/full/1/c/7/38027.jpg")
+      val imageUrl = URL("https://cdn.pixabay.com/photo/2017/11/30/11/57/barn-owl-2988291_960_720.jpg")
       val connection = imageUrl.openConnection() as HttpURLConnection
       connection.doInput = true
       connection.connect()
