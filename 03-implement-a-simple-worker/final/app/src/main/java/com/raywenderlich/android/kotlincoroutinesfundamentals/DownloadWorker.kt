@@ -15,6 +15,7 @@ class DownloadWorker(context: Context, workerParameters: WorkerParameters) :
     Worker(context, workerParameters) {
 
   override fun doWork(): Result {
+    //Update note: Image url has changed.
     val imageUrl = URL("https://cdn.pixabay.com/photo/2018/01/14/23/12/nature-3082832__480.jpg")
     val connection = imageUrl.openConnection() as HttpURLConnection
     connection.doInput = true
